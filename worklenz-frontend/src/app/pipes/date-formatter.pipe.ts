@@ -1,35 +1,34 @@
-import {Pipe, PipeTransform} from "@angular/core";
-import moment from "moment";
+import { Pipe, PipeTransform } from "@angular/core";
+import * as jalaliMoment from "jalali-moment";
 
 @Pipe({
   name: 'dateFormatter',
   standalone: true
 })
-
 export class DateFormatterPipe implements PipeTransform {
 
-  currentDate: moment.Moment = moment();
-  currentYear = moment().year();
+  currentDate = jalaliMoment.default();
+  currentYear = this.currentDate.jYear();
 
   transform(value: any) {
-
     if (value) {
       const date = this.currentDate;
-      const isSame = (input: moment.Moment, duration: any) => moment(value).isSame(input, duration);
+      const isSame = (input: jalaliMoment.Moment, duration: any) =>
+        jalaliMoment.default(value).isSame(input, duration);
 
-      if (moment(value).year() == this.currentYear) {
-        if (moment(value).isSame(date.clone(), 'day')) {
-          return "Today";
+      const valueDate = jalaliMoment.default(value);
+      if (valueDate.jYear() == this.currentYear) {
+        if (valueDate.isSame(date.clone(), 'day')) {
+          return "امروز";
         } else if (isSame(date.clone().subtract(1, 'day'), 'day')) {
-          return "Yesterday";
+          return "دیروز";
         } else if (isSame(date.clone().add(1, 'day'), 'day')) {
-          return "Tomorrow";
+          return "فردا";
         }
-        return moment(value).format('MMM DD').toString();
+        return valueDate.format('jDD jMMMM').toString();
       }
-      return moment(value).format('MMM DD, YYYY').toString();
+      return valueDate.format('jYYYY/jMM/jDD').toString();
     }
     return null;
   }
-
 }
