@@ -14,6 +14,7 @@ import {NzBadgeModule} from "ng-zorro-antd/badge";
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzCheckboxModule} from "ng-zorro-antd/checkbox";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {NzEmptyModule} from "ng-zorro-antd/empty";
 import {NzFormModule} from "ng-zorro-antd/form";
@@ -80,6 +81,7 @@ import {RxFor} from '@rx-angular/template/for';
     NzButtonModule,
     NzCheckboxModule,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     NzDropDownModule,
     NzEmptyModule,
     NzFormModule,

@@ -193,9 +193,15 @@
               <nz-form-item>
                 <nz-form-label [nzSpan]="null">Start date</nz-form-label>
                 <nz-form-control [nzSpan]="null">
-                  <nz-date-picker
-                    [formControlName]="'start_date'" [nzDisabledDate]="utils.checkForMaxDate(endDate)"
-                    class="w-100" (nzOnOpenChange)="calculateManDays()"></nz-date-picker>
+                    <qeydar-date-picker 
+                      [formControlName]="'start_date'"
+                      (onOpenChange)="calculateManDays()"
+                      class="w-100"
+
+                      [disabledDatesFilter]="utils.checkForMaxDate(endDate)"
+                      [valueFormat]="'date'"
+                      [calendarType]="'jalali'"
+                    ></qeydar-date-picker>
                 </nz-form-control>
               </nz-form-item>
             </div>
@@ -203,10 +209,15 @@
               <nz-form-item>
                 <nz-form-label [nzSpan]="null">End date</nz-form-label>
                 <nz-form-control [nzSpan]="null">
-                  <nz-date-picker
-                    [formControlName]="'end_date'"
-                    [nzDisabledDate]="utils.checkForMinDate(startDate)"
-                    class="w-100" (nzOnOpenChange)="calculateManDays()"></nz-date-picker>
+                    <qeydar-date-picker 
+                      [formControlName]="'end_date'"
+                      (onOpenChange)="calculateManDays()"
+                      class="w-100"
+
+                      [disabledDatesFilter]="utils.checkForMinDate(startDate)"
+                      [valueFormat]="'date'"
+                      [calendarType]="'jalali'"
+                    ></qeydar-date-picker>
                 </nz-form-control>
               </nz-form-item>
             </div>

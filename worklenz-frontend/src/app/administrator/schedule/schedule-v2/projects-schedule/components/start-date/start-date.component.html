@@ -3,15 +3,13 @@
   <!--    {{task.start_date | date: 'MMM dd,yyyy'}}-->
   <!--  </span>-->
   <span nz-typography class="date-text w-100">{{task.start_date | dateFormatter}}</span>
-  <nz-date-picker
-    class="border-0 bg-transparent w-100 task-list-date-picker"
+  <qeydar-date-picker 
     [(ngModel)]="task.start_date"
     (ngModelChange)="handleStartDateChange($event, task)"
-    [nzFormat]="'MMM dd,yyyy'"
-    [nzSuffixIcon]="''"
-    [nzPlaceHolder]="'Set a start date'"
-    [nzDisabledDate]="task.end_date | validateMaxDate"
-    (nzOnOpenChange)="toggleHighlightCls($event, elementStartDate)"
-  >
-  </nz-date-picker>
+    (onOpenChange)="toggleHighlightCls($event, elementStartDate)"
+    class="date-picker-width date-picker-noborder task-list-date-picker bg-transparent"
+
+    [valueFormat]="'date'"
+    [calendarType]="'jalali'"
+  ></qeydar-date-picker>
 </div>

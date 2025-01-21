@@ -25,7 +25,7 @@ export class DateFormatterPipe implements PipeTransform {
         } else if (isSame(date.clone().add(1, 'day'), 'day')) {
           return "فردا";
         }
-        return valueDate.format('jDD jMMMM').toString();
+        // return valueDate.format('jDD jMMMM').toString();
       }
       return valueDate.format('jYYYY/jMM/jDD').toString();
     }

@@ -1092,3 +1092,18 @@ p {
 .loading-custom-height .ant-skeleton-content {
   display: block!important;
 }
+
+
+@import '@angular/cdk/overlay-prebuilt.css';
+
+.date-picker-width input {
+  max-width: 120px !important;
+}
+
+.date-picker-noborder input {
+  border: none !important;
+}
+
+.date-picker-noicon button {
+  display: none;
+}

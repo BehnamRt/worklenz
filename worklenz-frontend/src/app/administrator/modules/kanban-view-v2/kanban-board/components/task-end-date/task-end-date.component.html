@@ -3,14 +3,14 @@
           [class.past-date]="checkForPastDate(task.end_date)"
           [class.soon-date]="checkForSoonDate(task.end_date)">{{task.end_date | dateFormatter}}</span>
 
-  <nz-date-picker
-    class="bg-transparent w-100 kanban-task-card-due-date"
-    [(ngModel)]="task.end_date"
-    (ngModelChange)="handleEndDateChange($event, task)"
-    [nzFormat]="'MMM dd,yyyy'"
-    [nzSuffixIcon]="''"
-    [nzPlaceHolder]="'Due date'"
-    [nzDisabledDate]="task.start_date | validateMinDate">
-  </nz-date-picker>
+  <qeydar-date-picker 
+      [(ngModel)]="task.end_date"
+      (ngModelChange)="handleEndDateChange($event, task)"
+      class="bg-transparent kanban-task-card-due-date date-picker-noicon date-picker-noborder"
+
+      [readOnly]="true"
+      [valueFormat]="'date'"
+      [calendarType]="'jalali'"
+    ></qeydar-date-picker>
 
 </div>

@@ -15,8 +15,14 @@
           </nz-select>
         </div>
         <div *nzSpaceItem>
-          <nz-date-picker [nzMode]="dateModeModel === 0 ? 'week' : 'month'" [(ngModel)]="dateRange" (ngModelChange)="onChange($event)"
-                          [nzFormat]="dateModeModel === 0 ? 'YYYY - \'Week\' ww' : 'YYYY - MMM'" [nzDisabledDate]="disabledDate"></nz-date-picker>
+          <qeydar-date-picker 
+            [isRange]="true"
+            [(ngModel)]="dateRange"
+            (ngModelChange)="onChange($event)"
+                      
+            [valueFormat]="'date'"
+            [calendarType]="'jalali'"
+          ></qeydar-date-picker>
 
         </div>
       </nz-space>

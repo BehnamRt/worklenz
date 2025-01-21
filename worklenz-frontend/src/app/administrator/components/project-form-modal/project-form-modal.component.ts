@@ -35,6 +35,7 @@ import {NzFormModule} from "ng-zorro-antd/form";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {TeamMembersFormComponent} from "../team-members-form/team-members-form.component";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {SafeStringPipe} from "@pipes/safe-string.pipe";
 import {FromNowPipe} from "@pipes/from-now.pipe";
@@ -88,6 +89,7 @@ import {ProjectsService} from "../../projects/projects.service";
     NzIconModule,
     TeamMembersFormComponent,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     NzDropDownModule,
     SafeStringPipe,
     DatePipe,

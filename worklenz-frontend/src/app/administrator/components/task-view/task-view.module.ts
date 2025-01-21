@@ -20,6 +20,7 @@ import {NzCheckboxModule} from "ng-zorro-antd/checkbox";
 import {SearchByNamePipe} from "../../../pipes/search-by-name.pipe";
 import {NzToolTipModule} from "ng-zorro-antd/tooltip";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {NzInputNumberModule} from "ng-zorro-antd/input-number";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {NzBadgeModule} from "ng-zorro-antd/badge";
@@ -121,6 +122,7 @@ import {TaskCommentMentionPipe} from "@pipes/task-comment-mention.pipe";
     SearchByNamePipe,
     NzToolTipModule,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     NzInputNumberModule,
     NzIconModule,
     NzBadgeModule,

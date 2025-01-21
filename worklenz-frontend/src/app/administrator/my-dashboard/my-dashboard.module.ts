@@ -33,6 +33,7 @@ import {MyProjectsComponent} from './dashboard/my-projects/my-projects.component
 import {NzProgressModule} from 'ng-zorro-antd/progress';
 import {MyTasksComponent} from './dashboard/my-tasks/my-tasks.component';
 import {NzDatePickerModule} from 'ng-zorro-antd/date-picker';
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {ProjectFormModalComponent} from "../components/project-form-modal/project-form-modal.component";
 import {NzRateModule} from 'ng-zorro-antd/rate';
 import {EllipsisPipe} from 'app/pipes/ellipsis.pipe';
@@ -105,6 +106,7 @@ import {TaskListV2Module} from "../modules/task-list-v2/task-list-v2.module";
         NzSkeletonModule,
         NzProgressModule,
         NzDatePickerModule,
+        QeydarDatePickerModule,
         ProjectFormModalComponent,
         NzRateModule,
         EllipsisPipe,

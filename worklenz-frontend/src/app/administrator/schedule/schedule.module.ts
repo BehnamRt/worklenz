@@ -10,6 +10,7 @@ import {NzPopoverModule} from "ng-zorro-antd/popover";
 import {NzTypographyModule} from "ng-zorro-antd/typography";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzSegmentedModule} from "ng-zorro-antd/segmented";
@@ -89,6 +90,7 @@ import {TaskPriorityLabelComponent} from "@admin/components/task-priority-label/
         NzTypographyModule,
         NzIconModule,
         NzDatePickerModule,
+        QeydarDatePickerModule,
         FormsModule,
         NzButtonModule,
         NzSegmentedModule,

@@ -24,6 +24,7 @@ import {NzWaveModule} from "ng-zorro-antd/core/wave";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {DateFormatterPipe} from "@pipes/date-formatter.pipe";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {TaskListV2Module} from "../task-list-v2/task-list-v2.module";
 import {TaskBarComponent} from './project-roadmap-v2-custom/components/task-bar/task-bar.component';
 import {AddTaskInputComponent} from './project-roadmap-v2-custom/components/add-task-input/add-task-input.component';
@@ -68,6 +69,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     FormsModule,
     DateFormatterPipe,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     TaskListV2Module,
     EllipsisPipe,
     NzDropDownModule,

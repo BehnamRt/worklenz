@@ -26,6 +26,7 @@ import {NzToolTipModule} from 'ng-zorro-antd/tooltip';
 import {NzSkeletonModule} from 'ng-zorro-antd/skeleton';
 import {NzRadioModule} from 'ng-zorro-antd/radio';
 import {NzDatePickerModule} from 'ng-zorro-antd/date-picker';
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {NzEmptyModule} from 'ng-zorro-antd/empty';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {NzCardModule} from 'ng-zorro-antd/card';
@@ -195,6 +196,7 @@ import {GanttChartV2Module} from "../modules/roadmap-v2/gantt-chart-v2.module";
     NzSkeletonModule,
     NzRadioModule,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     NzEmptyModule,
     ScrollingModule,
     NzCardModule,

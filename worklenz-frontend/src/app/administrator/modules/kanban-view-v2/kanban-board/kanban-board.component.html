@@ -142,9 +142,13 @@
                         <span nz-typography class="date-text"
                               [class.past-date]="checkForPastDate(createTaskEndDate)"
                               [class.soon-date]="checkForSoonDate(createTaskEndDate)">{{createTaskEndDate | dateFormatter}}</span>
-                          <nz-date-picker [nzPlaceHolder]="'Due date'" [nzSuffixIcon]="''"
-                                          [(ngModel)]="createTaskEndDate"
-                                          class="kanban-task-create-dp bg-transparent kanban-task-card-due-date"></nz-date-picker>
+                              <qeydar-date-picker 
+                                [(ngModel)]="createTaskEndDate"
+                                class="kanban-task-create-dp bg-transparent kanban-task-card-due-date"
+                    
+                                [valueFormat]="'date'"
+                                [calendarType]="'jalali'"
+                              ></qeydar-date-picker>
                         </div>
 
                         <!-- assignees -->

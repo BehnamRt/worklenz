@@ -19,6 +19,7 @@ import { ProjectHealthComponent } from './components/project-health/project-heal
 import {NzSelectModule} from "ng-zorro-antd/select";
 import { ProjectStartEndDatesComponent } from './components/project-start-end-dates/project-start-end-dates.component';
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {TaskListV2Module} from "../modules/task-list-v2/task-list-v2.module";
 import { ProjectStatusComponent } from './components/project-status/project-status.component';
 import {SafeStringPipe} from "@pipes/safe-string.pipe";
@@ -97,6 +98,7 @@ import {EllipsisPipe} from "@pipes/ellipsis.pipe";
         NzSkeletonModule,
         NzSelectModule,
         NzDatePickerModule,
+        QeydarDatePickerModule,
         TaskListV2Module,
         SafeStringPipe,
         NzBadgeModule,

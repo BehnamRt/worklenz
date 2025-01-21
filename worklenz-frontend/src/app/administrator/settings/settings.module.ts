@@ -67,6 +67,7 @@ import { TaskStartDateComponent } from './project-template-edit-view/components/
 import { TaskEndDateComponent } from './project-template-edit-view/components/row/task-end-date/task-end-date.component';
 import {TruncateIfLongPipe2} from "./project-template-edit-view/pipes/truncate-if-long.pipe";
 import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
+import {QeydarDatePickerModule} from '@qeydar/datepicker';
 import {DateFormatterPipe} from "@pipes/date-formatter.pipe";
 import {RxFor} from "@rx-angular/template/for";
 import {NzPipesModule} from "ng-zorro-antd/pipes";
@@ -160,6 +161,7 @@ import { TemplateNameComponent } from './project-template-edit-view/components/t
     CdkDragHandle,
     WithAlphaPipe,
     NzDatePickerModule,
+    QeydarDatePickerModule,
     DateFormatterPipe,
     RxFor,
     NzPipesModule,
