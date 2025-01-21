@@ -410,7 +410,7 @@ export class NotificationsDrawerComponent implements OnInit, OnDestroy {
 
   private onNotificationsUpdate = (notification: IWorklenzNotification) => {
     if (this.isPushEnabled()) {
-      const title = notification.team ? `${notification.team} | Worklenz` : "Worklenz";
+      const title = notification.team ? `${notification.team} | Naghshe Asar` : "Naghshe Asar";
 
       let url = notification.url;
       if (url && notification.params && Object.keys(notification.params).length) {

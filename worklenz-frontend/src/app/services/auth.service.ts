@@ -60,7 +60,7 @@ export class AuthService {
 
   public signOutWithConfirm() {
     this.modal.confirm({
-      nzTitle: 'Sign out from the Worklenz?',
+      nzTitle: 'Sign out?',
       nzOnOk: () => {
         this.onSignOutConfirm();
       }

@@ -22,7 +22,7 @@ export class AppService {
   }
 
   public setTitle(title: string): void {
-    this.title.setTitle(`Worklenz | ${title}`);
+    this.title.setTitle(`NaghsheAsar | ${title}`);
   }
 
   public setLoadingPath(path: string | null) {
